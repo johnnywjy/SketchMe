@@ -94,6 +94,7 @@
                        withGreenValue:0.5
                         withBlueValue:0.5
                        withAlphaValue:0.5];
+        [sketchView setNeedsDisplay];
         // As we are using a class factory here, we don't have to worry about
         // managing the memory - it has already been autoreleased!
         NSString *statusMsg = [NSString
@@ -122,6 +123,7 @@
         CGPoint touchPoint = [touch locationInView:myView];
         
         [myDrawingModel addMovePoint:touchPoint];
+        [sketchView setNeedsDisplay];
         
         NSString *statusMsg = [NSString
                                stringWithFormat:@"Touch Move at %.0f, %.0f, having added %d points",
