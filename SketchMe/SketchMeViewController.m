@@ -196,5 +196,14 @@
     return YES;
 }
 
+- (IBAction)clearScreenButtonPressed
+{
+    if ([myDrawingModel pathsInStore] > 0) {
+        [myDrawingModel clearAll];
+        [sketchView setNeedsDisplay];
+    } else
+        [statusLabel setText:[NSString stringWithFormat:@"There is no image to delete!"]];
+}
+
 
 @end
