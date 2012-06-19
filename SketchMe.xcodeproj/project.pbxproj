@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C396BE2D1590AB3600FD57DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C396BE2C1590AB3600FD57DD /* UIKit.framework */; };
+		C396BE2F1590AB3600FD57DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C396BE2E1590AB3600FD57DD /* Foundation.framework */; };
+		C396BE311590AB3600FD57DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C396BE301590AB3600FD57DD /* CoreGraphics.framework */; };
+		C396BE371590AB3700FD57DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C396BE351590AB3700FD57DD /* InfoPlist.strings */; };
+		C396BE391590AB3700FD57DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C396BE381590AB3700FD57DD /* main.m */; };
+		C396BE3D1590AB3700FD57DD /* SketchMeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C396BE3C1590AB3700FD57DD /* SketchMeAppDelegate.m */; };
+		C396BE401590AB3700FD57DD /* SketchMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C396BE3F1590AB3700FD57DD /* SketchMeViewController.m */; };
+		C396BE431590AB3700FD57DD /* SketchMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C396BE411590AB3700FD57DD /* SketchMeViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C396BE281590AB3600FD57DD /* SketchMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SketchMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C396BE2C1590AB3600FD57DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C396BE2E1590AB3600FD57DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C396BE301590AB3600FD57DD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C396BE341590AB3600FD57DD /* SketchMe-Info.plist */ = {isa = PBXFileReference; path = "SketchMe-Info.plist"; sourceTree = "<group>"; };
+		C396BE361590AB3700FD57DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C396BE381590AB3700FD57DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C396BE3A1590AB3700FD57DD /* SketchMe-Prefix.pch */ = {isa = PBXFileReference; path = "SketchMe-Prefix.pch"; sourceTree = "<group>"; };
+		C396BE3B1590AB3700FD57DD /* SketchMeAppDelegate.h */ = {isa = PBXFileReference; path = SketchMeAppDelegate.h; sourceTree = "<group>"; };
+		C396BE3C1590AB3700FD57DD /* SketchMeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SketchMeAppDelegate.m; sourceTree = "<group>"; };
+		C396BE3E1590AB3700FD57DD /* SketchMeViewController.h */ = {isa = PBXFileReference; path = SketchMeViewController.h; sourceTree = "<group>"; };
+		C396BE3F1590AB3700FD57DD /* SketchMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SketchMeViewController.m; sourceTree = "<group>"; };
+		C396BE421590AB3700FD57DD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SketchMeViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C396BE251590AB3600FD57DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C396BE2D1590AB3600FD57DD /* UIKit.framework in Frameworks */,
+				C396BE2F1590AB3600FD57DD /* Foundation.framework in Frameworks */,
+				C396BE311590AB3600FD57DD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C396BE1D1590AB3600FD57DD = {
+			isa = PBXGroup;
+			children = (
+				C396BE321590AB3600FD57DD /* SketchMe */,
+				C396BE2B1590AB3600FD57DD /* Frameworks */,
+				C396BE291590AB3600FD57DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C396BE291590AB3600FD57DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C396BE281590AB3600FD57DD /* SketchMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C396BE2B1590AB3600FD57DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C396BE2C1590AB3600FD57DD /* UIKit.framework */,
+				C396BE2E1590AB3600FD57DD /* Foundation.framework */,
+				C396BE301590AB3600FD57DD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C396BE321590AB3600FD57DD /* SketchMe */ = {
+			isa = PBXGroup;
+			children = (
+				C396BE3B1590AB3700FD57DD /* SketchMeAppDelegate.h */,
+				C396BE3C1590AB3700FD57DD /* SketchMeAppDelegate.m */,
+				C396BE3E1590AB3700FD57DD /* SketchMeViewController.h */,
+				C396BE3F1590AB3700FD57DD /* SketchMeViewController.m */,
+				C396BE411590AB3700FD57DD /* SketchMeViewController.xib */,
+				C396BE331590AB3600FD57DD /* Supporting Files */,
+			);
+			path = SketchMe;
+			sourceTree = "<group>";
+		};
+		C396BE331590AB3600FD57DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C396BE341590AB3600FD57DD /* SketchMe-Info.plist */,
+				C396BE351590AB3700FD57DD /* InfoPlist.strings */,
+				C396BE381590AB3700FD57DD /* main.m */,
+				C396BE3A1590AB3700FD57DD /* SketchMe-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C396BE271590AB3600FD57DD /* SketchMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C396BE461590AB3700FD57DD /* Build configuration list for PBXNativeTarget "SketchMe" */;
+			buildPhases = (
+				C396BE241590AB3600FD57DD /* Sources */,
+				C396BE251590AB3600FD57DD /* Frameworks */,
+				C396BE261590AB3600FD57DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SketchMe;
+			productName = SketchMe;
+			productReference = C396BE281590AB3600FD57DD /* SketchMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C396BE1F1590AB3600FD57DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C396BE221590AB3600FD57DD /* Build configuration list for PBXProject "SketchMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C396BE1D1590AB3600FD57DD;
+			productRefGroup = C396BE291590AB3600FD57DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C396BE271590AB3600FD57DD /* SketchMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C396BE261590AB3600FD57DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C396BE371590AB3700FD57DD /* InfoPlist.strings in Resources */,
+				C396BE431590AB3700FD57DD /* SketchMeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C396BE241590AB3600FD57DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C396BE391590AB3700FD57DD /* main.m in Sources */,
+				C396BE3D1590AB3700FD57DD /* SketchMeAppDelegate.m in Sources */,
+				C396BE401590AB3700FD57DD /* SketchMeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C396BE351590AB3700FD57DD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C396BE361590AB3700FD57DD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C396BE411590AB3700FD57DD /* SketchMeViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C396BE421590AB3700FD57DD /* en */,
+			);
+			name = SketchMeViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C396BE441590AB3700FD57DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C396BE451590AB3700FD57DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C396BE471590AB3700FD57DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SketchMe/SketchMe-Prefix.pch";
+				INFOPLIST_FILE = "SketchMe/SketchMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C396BE481590AB3700FD57DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SketchMe/SketchMe-Prefix.pch";
+				INFOPLIST_FILE = "SketchMe/SketchMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C396BE221590AB3600FD57DD /* Build configuration list for PBXProject "SketchMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C396BE441590AB3700FD57DD /* Debug */,
+				C396BE451590AB3700FD57DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C396BE461590AB3700FD57DD /* Build configuration list for PBXNativeTarget "SketchMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C396BE471590AB3700FD57DD /* Debug */,
+				C396BE481590AB3700FD57DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C396BE1F1590AB3600FD57DD /* Project object */;
+}
