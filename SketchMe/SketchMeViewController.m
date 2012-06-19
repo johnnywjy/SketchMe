@@ -49,7 +49,8 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [super viewDidAppear:animated];
+    //[super viewDidAppear:animated];
+    [self becomeFirstResponder];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -147,5 +148,53 @@
     NSString *statusMsg = [NSString stringWithString:@"Touch Cancelled"];
     [statusLabel setText:statusMsg];
 }
+
+// ========================================
+#pragma mark - Motion Events
+// ========================================
+
+
+- (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    
+    // An empty implementation to avoid the event
+    // going up the responder hierarchy
+}
+
+- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    // Handle the shake
+    
+    // =============================================
+    // Initially add some message to appear in the status
+    // label to announce a shake event.
+    // Later - delete a line segment.
+    // This is something that still needs to be done    
+    // =============================================
+    if ([myDrawingModel pathsInStore] > 0) {
+        [myDrawingModel clearLastPath];
+        [statusLabel setText:[NSString stringWithFormat:@"%d paths remaining", [myDrawingModel pathsInStore]]];
+        [sketchView setNeedsDisplay];
+    }else{
+        [statusLabel setText:@"no path to be deleted."];
+    
+    }
+    
+    
+}
+
+- (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    // An empty implementation to avoid the event
+    // going up the responder hierarchy
+}
+
+// ========================================
+
+// Allow the view controller to become the first responder
+// so that it can handle motion events.
+
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
 
 @end
