@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MySketchView : UIView
+@class MyDataStore;
+
+@interface MySketchView : UIView{
+    MyDataStore *myDrawingModel;
+}
+
+@property (nonatomic, retain) MyDataStore *myDrawingModel;
 
 - (void)resetRectView;
 

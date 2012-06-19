@@ -7,11 +7,13 @@
 //
 
 #import "SketchMeViewController.h"
+#import "MyDataStore.h"
 
 @implementation SketchMeViewController
 
 @synthesize statusLabel;
 @synthesize sketchView;
+@synthesize myDrawingModel;
 
 - (void)didReceiveMemoryWarning
 {
@@ -23,6 +25,10 @@
 
 - (void)viewDidLoad
 {
+    if (!myDrawingModel) {
+        myDrawingModel = [[MyDataStore alloc] init];
+    }
+    [sketchView setMyDrawingModel:myDrawingModel];
     NSString *statusMsg = [NSString stringWithString:@"App init"];
     [statusLabel setText:statusMsg];
     [super viewDidLoad];
@@ -62,6 +68,12 @@
     return YES;
 }
 
+- (void)dealloc
+{
+    [myDrawingModel release];
+    [super dealloc];
+}
+
 // ========================================
 #pragma mark - Touch Events
 // ========================================
@@ -76,10 +88,17 @@
         // touches occured in this view only
         CGPoint touchPoint = [touch locationInView:myView];
         
+        [myDrawingModel addStartPoint:touchPoint
+                        withLineWidth:5.0
+                         withRedValue:0.5
+                       withGreenValue:0.5
+                        withBlueValue:0.5
+                       withAlphaValue:0.5];
         // As we are using a class factory here, we don't have to worry about
         // managing the memory - it has already been autoreleased!
-        NSString *statusMsg = [NSString stringWithFormat:@"Touch Began at %.0f, %.0f",
-                               touchPoint.x, touchPoint.y];
+        NSString *statusMsg = [NSString
+                               stringWithFormat:@"Touch Move at %.0f, %.0f, having added %d points",
+                               touchPoint.x, touchPoint.y, [myDrawingModel pointsInCurrentPath]];
         [statusLabel setText:statusMsg];
     }
 }
@@ -102,8 +121,11 @@
         
         CGPoint touchPoint = [touch locationInView:myView];
         
-        NSString *statusMsg = [NSString stringWithFormat:@"Touch Move at %.0f, %.0f",
-                               touchPoint.x, touchPoint.y];
+        [myDrawingModel addMovePoint:touchPoint];
+        
+        NSString *statusMsg = [NSString
+                               stringWithFormat:@"Touch Move at %.0f, %.0f, having added %d points",
+                               touchPoint.x, touchPoint.y, [myDrawingModel pointsInCurrentPath]];
         [statusLabel setText:statusMsg];
     }
 }

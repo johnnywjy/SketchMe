@@ -7,8 +7,11 @@
 //
 
 #import "MySketchView.h"
+#import "MyDataStore.h"
 
 @implementation MySketchView
+
+@synthesize myDrawingModel;
 
 - (id)initWithFrame:(CGRect)frame
 {

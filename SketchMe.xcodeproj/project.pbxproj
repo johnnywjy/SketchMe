@@ -15,7 +15,8 @@
 		C396BE3D1590AB3700FD57DD /* SketchMeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C396BE3C1590AB3700FD57DD /* SketchMeAppDelegate.m */; };
 		C396BE401590AB3700FD57DD /* SketchMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C396BE3F1590AB3700FD57DD /* SketchMeViewController.m */; };
 		C396BE431590AB3700FD57DD /* SketchMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C396BE411590AB3700FD57DD /* SketchMeViewController.xib */; };
-		C396BE4B1590AB8800FD57DD /* MySketchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C396BE4A1590AB8800FD57DD /* MySketchView.m */; };
+		C396BE4E1590BCDE00FD57DD /* MyDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C396BE4D1590BCDE00FD57DD /* MyDataStore.m */; };
+		C396BE511590BCF600FD57DD /* MySketchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C396BE501590BCF600FD57DD /* MySketchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +33,10 @@
 		C396BE3E1590AB3700FD57DD /* SketchMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SketchMeViewController.h; sourceTree = "<group>"; };
 		C396BE3F1590AB3700FD57DD /* SketchMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SketchMeViewController.m; sourceTree = "<group>"; };
 		C396BE421590AB3700FD57DD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SketchMeViewController.xib; sourceTree = "<group>"; };
-		C396BE491590AB8800FD57DD /* MySketchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MySketchView.h; path = ../MySketchView.h; sourceTree = "<group>"; };
-		C396BE4A1590AB8800FD57DD /* MySketchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MySketchView.m; path = ../MySketchView.m; sourceTree = "<group>"; };
+		C396BE4C1590BCDE00FD57DD /* MyDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDataStore.h; sourceTree = "<group>"; };
+		C396BE4D1590BCDE00FD57DD /* MyDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataStore.m; sourceTree = "<group>"; };
+		C396BE4F1590BCF600FD57DD /* MySketchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySketchView.h; sourceTree = "<group>"; };
+		C396BE501590BCF600FD57DD /* MySketchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySketchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +83,10 @@
 		C396BE321590AB3600FD57DD /* SketchMe */ = {
 			isa = PBXGroup;
 			children = (
-				C396BE491590AB8800FD57DD /* MySketchView.h */,
-				C396BE4A1590AB8800FD57DD /* MySketchView.m */,
+				C396BE4C1590BCDE00FD57DD /* MyDataStore.h */,
+				C396BE4D1590BCDE00FD57DD /* MyDataStore.m */,
+				C396BE4F1590BCF600FD57DD /* MySketchView.h */,
+				C396BE501590BCF600FD57DD /* MySketchView.m */,
 				C396BE3B1590AB3700FD57DD /* SketchMeAppDelegate.h */,
 				C396BE3C1590AB3700FD57DD /* SketchMeAppDelegate.m */,
 				C396BE3E1590AB3700FD57DD /* SketchMeViewController.h */,
@@ -168,7 +173,8 @@
 				C396BE391590AB3700FD57DD /* main.m in Sources */,
 				C396BE3D1590AB3700FD57DD /* SketchMeAppDelegate.m in Sources */,
 				C396BE401590AB3700FD57DD /* SketchMeViewController.m in Sources */,
-				C396BE4B1590AB8800FD57DD /* MySketchView.m in Sources */,
+				C396BE4E1590BCDE00FD57DD /* MyDataStore.m in Sources */,
+				C396BE511590BCF600FD57DD /* MySketchView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

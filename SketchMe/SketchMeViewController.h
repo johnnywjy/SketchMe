@@ -8,15 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "MySketchView.h"
-
+@class MyDataStore;
 
 @interface SketchMeViewController : UIViewController{
     UILabel * statusLabel;
     MySketchView *sketchView;
+    MyDataStore *myDrawingModel;
 }
 
 @property (nonatomic, retain) IBOutlet UILabel *statusLabel;
 @property (nonatomic, retain) IBOutlet MySketchView *sketchView;
+@property (nonatomic, retain) MyDataStore *myDrawingModel;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
