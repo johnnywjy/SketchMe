@@ -39,6 +39,9 @@
         myDrawingModel = [[MyDataStore alloc] init];
     }
     [sketchView setMyDrawingModel:myDrawingModel];
+     
+    //[penView setNeedsDisplay];
+    
     NSString *statusMsg = [NSString stringWithString:@"App init"];
     [statusLabel setText:statusMsg];
     [super viewDidLoad];
@@ -136,9 +139,11 @@
         [myDrawingModel addMovePoint:touchPoint];
         [sketchView setNeedsDisplay];
         
+        float px = touchPoint.x > 0?touchPoint.x < 728?touchPoint.x:728:0;
+        float py = touchPoint.y > 0?touchPoint.y < 728?touchPoint.y:728:0;
         NSString *statusMsg = [NSString
                                stringWithFormat:@"Touch Move at %.0f, %.0f, having added %d points",
-                               touchPoint.x, touchPoint.y, [myDrawingModel pointsInCurrentPath]];
+                               px, py, [myDrawingModel pointsInCurrentPath]];
         [statusLabel setText:statusMsg];
     }
 }
@@ -220,6 +225,7 @@
     UISlider *slider = (UISlider *)sender;  // Cast sender into a UISlider
     // so "value" calls the UISlider method
     
+
     if (slider == redSlider)
         redValue = [slider value];
     if (slider == greenSlider)
@@ -230,6 +236,17 @@
         alphaValue = [slider value];
     if (slider == lineWidthSlider)
         lineWidthValue = [slider value];
+    [penView setNeedsDisplay];
 }
+
+- (IBAction)resetPen
+{
+    [redSlider setValue:(redValue = 0.5) animated:YES];
+    [greenSlider setValue:(greenValue = 0.5) animated:YES];
+    [blueSlider setValue:(blueValue = 0.5) animated:YES];
+    [alphaSlider setValue:(alphaValue = 0.5) animated:YES];
+    [lineWidthSlider setValue:(lineWidthValue = 10.0) animated:YES];
+}
+
 
 @end

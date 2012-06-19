@@ -17,6 +17,7 @@
 		C396BE431590AB3700FD57DD /* SketchMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C396BE411590AB3700FD57DD /* SketchMeViewController.xib */; };
 		C396BE4E1590BCDE00FD57DD /* MyDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C396BE4D1590BCDE00FD57DD /* MyDataStore.m */; };
 		C396BE511590BCF600FD57DD /* MySketchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C396BE501590BCF600FD57DD /* MySketchView.m */; };
+		C396BE541590D42E00FD57DD /* PenView.m in Sources */ = {isa = PBXBuildFile; fileRef = C396BE531590D42E00FD57DD /* PenView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		C396BE4D1590BCDE00FD57DD /* MyDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataStore.m; sourceTree = "<group>"; };
 		C396BE4F1590BCF600FD57DD /* MySketchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySketchView.h; sourceTree = "<group>"; };
 		C396BE501590BCF600FD57DD /* MySketchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySketchView.m; sourceTree = "<group>"; };
+		C396BE521590D42D00FD57DD /* PenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PenView.h; sourceTree = "<group>"; };
+		C396BE531590D42E00FD57DD /* PenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PenView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				C396BE4D1590BCDE00FD57DD /* MyDataStore.m */,
 				C396BE4F1590BCF600FD57DD /* MySketchView.h */,
 				C396BE501590BCF600FD57DD /* MySketchView.m */,
+				C396BE521590D42D00FD57DD /* PenView.h */,
+				C396BE531590D42E00FD57DD /* PenView.m */,
 				C396BE3B1590AB3700FD57DD /* SketchMeAppDelegate.h */,
 				C396BE3C1590AB3700FD57DD /* SketchMeAppDelegate.m */,
 				C396BE3E1590AB3700FD57DD /* SketchMeViewController.h */,
@@ -175,6 +180,7 @@
 				C396BE401590AB3700FD57DD /* SketchMeViewController.m in Sources */,
 				C396BE4E1590BCDE00FD57DD /* MyDataStore.m in Sources */,
 				C396BE511590BCF600FD57DD /* MySketchView.m in Sources */,
+				C396BE541590D42E00FD57DD /* PenView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

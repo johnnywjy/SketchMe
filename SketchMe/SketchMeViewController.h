@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "MySketchView.h"
+#import "PenView.h"
+
 @class MyDataStore;
 
 @interface SketchMeViewController : UIViewController{
     UILabel * statusLabel;
     MySketchView *sketchView;
+    PenView *penView;
     MyDataStore *myDrawingModel;
+    MyDataStore *penModel;
     float redValue;
     float greenValue;
     float blueValue;
@@ -42,5 +46,6 @@
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event;
 - (IBAction)clearScreenButtonPressed;
 - (IBAction)sliderValueChanged:(id)sender;
+- (IBAction)resetPen;
 
 @end
