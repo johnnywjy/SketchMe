@@ -14,6 +14,11 @@
 @synthesize statusLabel;
 @synthesize sketchView;
 @synthesize myDrawingModel;
+@synthesize redSlider;
+@synthesize greenSlider;
+@synthesize blueSlider;
+@synthesize alphaSlider;
+@synthesize lineWidthSlider;
 
 - (void)didReceiveMemoryWarning
 {
@@ -25,6 +30,11 @@
 
 - (void)viewDidLoad
 {
+    [redSlider setValue:(redValue = 0.5) animated:YES];
+    [greenSlider setValue:(greenValue = 0.5) animated:YES];
+    [blueSlider setValue:(blueValue = 0.5) animated:YES];
+    [alphaSlider setValue:(alphaValue = 0.5) animated:YES];
+    [lineWidthSlider setValue:(lineWidthValue = 10.0) animated:YES];
     if (!myDrawingModel) {
         myDrawingModel = [[MyDataStore alloc] init];
     }
@@ -90,11 +100,11 @@
         CGPoint touchPoint = [touch locationInView:myView];
         
         [myDrawingModel addStartPoint:touchPoint
-                        withLineWidth:5.0
-                         withRedValue:0.5
-                       withGreenValue:0.5
-                        withBlueValue:0.5
-                       withAlphaValue:0.5];
+                        withLineWidth:lineWidthValue
+                         withRedValue:redValue
+                       withGreenValue:greenValue
+                        withBlueValue:blueValue
+                       withAlphaValue:alphaValue];
         [sketchView setNeedsDisplay];
         // As we are using a class factory here, we don't have to worry about
         // managing the memory - it has already been autoreleased!
@@ -205,5 +215,21 @@
         [statusLabel setText:[NSString stringWithFormat:@"There is no image to delete!"]];
 }
 
+- (IBAction)sliderValueChanged:(id)sender
+{
+    UISlider *slider = (UISlider *)sender;  // Cast sender into a UISlider
+    // so "value" calls the UISlider method
+    
+    if (slider == redSlider)
+        redValue = [slider value];
+    if (slider == greenSlider)
+        greenValue = [slider value];
+    if (slider == blueSlider)
+        blueValue = [slider value];
+    if (slider == alphaSlider)
+        alphaValue = [slider value];
+    if (slider == lineWidthSlider)
+        lineWidthValue = [slider value];
+}
 
 @end
