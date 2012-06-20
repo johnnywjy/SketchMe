@@ -13,6 +13,7 @@
 
 @synthesize statusLabel;
 @synthesize sketchView;
+@synthesize penView;
 @synthesize myDrawingModel;
 @synthesize redSlider;
 @synthesize greenSlider;
@@ -40,7 +41,7 @@
     }
     [sketchView setMyDrawingModel:myDrawingModel];
      
-    //[penView setNeedsDisplay];
+    [penView setNeedsDisplay];
     
     NSString *statusMsg = [NSString stringWithString:@"App init"];
     [statusLabel setText:statusMsg];

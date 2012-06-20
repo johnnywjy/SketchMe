@@ -10,10 +10,10 @@
 @class MyDataStore;
 
 @interface PenView : UIView{    
-    MyDataStore *penModel;
+    MyDataStore *myDrawingModel;
 }
 
-@property (nonatomic, retain) MyDataStore *penModel;
+@property (nonatomic, retain) MyDataStore *myDrawingModel;
 
 - (void)resetRectView;
 

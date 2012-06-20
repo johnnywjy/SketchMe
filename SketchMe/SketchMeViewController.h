@@ -32,6 +32,7 @@
 
 @property (nonatomic, retain) IBOutlet UILabel *statusLabel;
 @property (nonatomic, retain) IBOutlet MySketchView *sketchView;
+@property (nonatomic, retain) IBOutlet PenView *penView;
 @property (nonatomic, retain) MyDataStore *myDrawingModel;
 @property (nonatomic, retain) IBOutlet UISlider *redSlider;
 @property (nonatomic, retain) IBOutlet UISlider *greenSlider;
